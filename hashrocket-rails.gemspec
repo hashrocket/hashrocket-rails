@@ -12,6 +12,10 @@ Gem::Specification.new do |gem|
   gem.files         = `git ls-files`.split("\n")
   gem.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   gem.name          = "hashrocket-rails"
+
+  gem.add_runtime_dependency 'haml-rails'
+  gem.add_runtime_dependency 'decent_exposure'
+
   gem.require_paths = ["lib"]
   gem.version       = Hashrocket::VERSION
 end
