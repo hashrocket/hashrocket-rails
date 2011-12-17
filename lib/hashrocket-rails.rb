@@ -1,7 +1,7 @@
 require "hashrocket-rails/version"
 
 module Hashrocket
-  module Rails
-    # Your code goes here...
+  class Rails < ::Rails::Engine
+    isolate_namespace Hashrocket
   end
 end
