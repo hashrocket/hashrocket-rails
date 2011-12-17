@@ -1,0 +1,76 @@
+= border-radius($radius)
+  -moz-border-radius: $radius
+  border-radius: $radius
+
+= border-top-right-radius($radius)
+  -moz-border-radius-topright: $radius
+  border-top-right-radius: $radius
+
+= border-top-left-radius($radius)
+  -moz-border-radius-topleft: $radius
+  border-top-left-radius: $radius
+
+= border-bottom-right-radius($radius)
+  -moz-border-radius-bottomright: $radius
+  border-bottom-right-radius: $radius
+
+= border-bottom-left-radius($radius)
+  -moz-border-radius-bottomleft: $radius
+  border-bottom-left-radius: $radius
+
+= box-shadow($arguments)
+  -webkit-box-shadow: $arguments
+  -moz-box-shadow: $arguments
+  box-shadow: $arguments
+
+= opacity($val)
+  opacity: $val
+  filter: alpha(opacity=$val*100)
+
+= gradient-bg($color1, $color2)
+  background-color: $color1
+  background-image: -moz-linear-gradient(100% 100% 90deg, $color2, $color1)
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($color1), to($color2))
+
+= image-replace($img, $type:png)
+  display: block
+  font-size: 1px
+  text-indent: -8685px
+  overflow: hidden
+  background: url(/assets/#{$img}.#{$type}) no-repeat
+
+= underline-hover
+  text-decoration: none
+  &:hover
+    text-decoration: underline
+
+= wrapper
+  position: relative
+  min-width: 900px
+  max-width: 1200px
+  padding: 0 30px
+  margin-left: auto
+  margin-right: auto
+
+= button-skeleton($from, $to)
+  display: block
+  font-weight: bold
+  text-decoration: none
+  cursor: pointer
+  color: #fff
+  +gradient-bg($from, $to)
+  border: none
+  border: 1px solid $to + #202020
+  border-top: 1px solid $to + #444
+  text-shadow: 0 1px 1px desaturate($to - #333, 10%)
+  overflow: visible
+  outline: 1px solid $to
+  &:hover
+    +gradient_bg(saturate($from + #111111, 5%), $to)
+  &:active
+    +gradient-bg($from - #222, $to)
+  &[disabled], &.disabled
+    +opacity(.7)
+    cursor: default
+    &:hover
+      +gradient-bg($from, $to)
