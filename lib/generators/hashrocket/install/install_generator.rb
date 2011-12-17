@@ -10,5 +10,12 @@ module Hashrocket
       commit 'Setup base layout'
     end
 
+    def setup_stylesheets
+      remove_file 'app/assets/stylesheets/application.css'
+      gitkeep 'app/assets/stylesheets/vendor'
+      gitkeep 'app/assets/stylesheets/global'
+      template 'application.css.sass', 'app/assets/stylesheets/application.css.sass'
+      commit 'Setup base stylesheets'
+    end
   end
 end

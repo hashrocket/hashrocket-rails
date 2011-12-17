@@ -4,8 +4,11 @@ Description:
 Example:
     rails generate hashrocket:install
 
-    Installs a base layout plus:
-
-      * whitespace-reset
+    Installs a base layout with:
       * html5shiv
       * shared flash partial
+
+    Install a base stylsheet with:
+      * a standard directory structure
+      * mixins imported
+      * whitespace-reset
