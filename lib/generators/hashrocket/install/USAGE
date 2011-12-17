@@ -1,0 +1,11 @@
+Description:
+    Every project needs these
+
+Example:
+    rails generate hashrocket:install
+
+    Installs a base layout plus:
+
+      * whitespace-reset
+      * html5shiv
+      * shared flash partial

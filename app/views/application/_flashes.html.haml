@@ -1,0 +1,4 @@
+- if flash.any?
+  .flash
+    - flash.each do |type, msg|
+      %p{class: type}= msg
