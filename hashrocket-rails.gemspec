@@ -4,9 +4,9 @@ require File.expand_path('../lib/hashrocket-rails/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["Hashrocket", "Lar Van Der Jagt"]
   gem.email         = ["dev@hashrocket.com", "lar@hashrocket.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
-  gem.homepage      = ""
+  gem.description   = %q{Rails engine & generators for bootstrapping a Hashrocket project}
+  gem.summary       = %q{Contains code which may have previously been copied from project to project}
+  gem.homepage      = "http://hashrocket.com"
 
   gem.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   gem.files         = `git ls-files`.split("\n")
