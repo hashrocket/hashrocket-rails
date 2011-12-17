@@ -16,6 +16,11 @@ module Hashrocket
 
     private
 
+    def gitkeep(directory)
+      empty_directory directory
+      create_file '%s/.gitkeep' % directory
+    end
+
     def commit(msg)
       git add: '-A'
       git commit: "-m '#{msg}'"
