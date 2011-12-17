@@ -1,7 +1,7 @@
 require 'generators/hashrocket/generators'
 
 module Hashrocket
-  class InstallGenerator < Rails::Generators::Base
+  class InstallGenerator < ::Rails::Generators::Base
     include Generators
 
     def convert_layout

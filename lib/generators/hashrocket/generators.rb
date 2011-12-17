@@ -1,3 +1,5 @@
+require 'rails/generators/base'
+
 module Hashrocket
   module Generators
     extend ActiveSupport::Concern

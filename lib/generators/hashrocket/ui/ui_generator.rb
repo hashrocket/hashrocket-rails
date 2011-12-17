@@ -1,7 +1,7 @@
 require 'generators/hashrocket/generators'
 
 module Hashrocket
-  class UiGenerator < Rails::Generators::Base
+  class UiGenerator < ::Rails::Generators::Base
     include Generators
 
     def copy_controller
