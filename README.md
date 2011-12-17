@@ -87,7 +87,6 @@ your app.
 You can explicitly exclude files from being shown in the UI index by adding the
 following to `ui_controller.rb`.
 
-    @@@ ruby
     class UiController < Hashrocket::UiController
       exclude 'filename', 'other_filename', ->(w) { w.ends_with?('_old') }
     end
