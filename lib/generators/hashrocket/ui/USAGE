@@ -1,0 +1,13 @@
+Description:
+    Install ui controller and route
+
+Example:
+    rails generate hashrocket:ui
+
+    Installs:
+
+        app/controllers/ui_controller.rb
+
+    Adds a route:
+
+        match '/ui(/:action), controller: 'ui'
