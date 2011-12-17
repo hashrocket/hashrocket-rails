@@ -1,8 +1,8 @@
 Description:
-    Every project needs these
+    Base application layout & stylesheet setup
 
 Example:
-    rails generate hashrocket:install
+    rails generate hashrocket:layout
 
     Installs a base layout with:
       * html5shiv
