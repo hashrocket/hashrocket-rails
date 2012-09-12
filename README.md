@@ -13,7 +13,9 @@ This gem provides the following:
 
 Add this line to your application's Gemfile:
 
-    gem 'hashrocket-rails'
+```Ruby
+gem 'hashrocket-rails'
+```
 
 And then execute:
 
@@ -87,9 +89,11 @@ your app.
 You can explicitly exclude files from being shown in the UI index by adding the
 following to `ui_controller.rb`.
 
-    class UiController < Hashrocket::UiController
-      exclude 'filename', 'other_filename', ->(w) { w.ends_with?('_old') }
-    end
+```Ruby
+class UiController < Hashrocket::UiController
+  exclude 'filename', 'other_filename', ->(w) { w.ends_with?('_old') }
+end
+```
 
 By default the `index` view & any partials are excluded.
 
