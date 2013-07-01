@@ -10,7 +10,7 @@ module Hashrocket
     end
 
     def add_route
-      route "match '/ui(/:action)', controller: 'ui'"
+      route "match '/ui(/:action)', controller: 'ui', via: :get"
     end
 
     def commit
